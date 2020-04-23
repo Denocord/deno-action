@@ -7,4 +7,5 @@ RUN curl -fsSL https://deno.land/x/install/install.sh | sh && \
 
 ENV DENO_DIR $HOME/.deno
 
-CMD [ "deno" ]
+COPY entrypoint.sh /entrypoint.sh
+ENTRYPOINT [ "/entrypoint.sh" ]
