@@ -8,5 +8,4 @@ RUN curl -fsSL https://deno.land/x/install/install.sh | sh && \
 ENV DENO_DIR $HOME/.deno
 
 COPY entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
 ENTRYPOINT [ "/entrypoint.sh" ]
