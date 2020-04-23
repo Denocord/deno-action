@@ -6,6 +6,5 @@ inputs:
         required: true
 runs:
     using: docker
-    image: Dockerfile
-    args: 
-        - ${{ inputs.args }}
+    image: hayd/deno:alpine
+    args: fromJSON(inputs.args)

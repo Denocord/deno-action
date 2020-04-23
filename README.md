@@ -3,11 +3,11 @@ A GitHub action that wraps the Deno CLI.
 
 ## Inputs
 ### `args`
-**required** - the args to pass to the Deno CLI
+**required** - the args to pass to the Deno CLI as json
 
 ## Example
 ```yaml
 uses: Denocord/deno-action@v1
 with:
-    args: "test src/"
+    args: '["test", "src/"]'
 ```
