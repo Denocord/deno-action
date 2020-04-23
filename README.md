@@ -9,5 +9,5 @@ A GitHub action that wraps the Deno CLI.
 ```yaml
 uses: Denocord/deno-action@v1
 with:
-    args: [test, src/]
+    args: "test src/"
 ```
