@@ -1,0 +1,10 @@
+name: Deno
+description: Run the deno CLI
+inputs:
+    args: 
+        description: The arguments to pass to the CLI
+        required: true
+runs:
+    using: docker
+    image: Dockerfile
+    args: ${{ inputs.args }}
