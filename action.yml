@@ -6,6 +6,6 @@ inputs:
         required: true
 runs:
     using: docker
-    image: hayd/deno:alpine
+    image: docker://hayd/deno:alpine
     args: 
         - ${{fromJSON(inputs.args)}}
