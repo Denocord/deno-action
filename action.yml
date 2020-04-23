@@ -7,4 +7,5 @@ inputs:
 runs:
     using: docker
     image: hayd/deno:alpine
-    args: fromJSON(inputs.args)
+    args: 
+        - ${{fromJSON(inputs.args)}}
